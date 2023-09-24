@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+
+header {
+    position: relative;
+    padding: 30px 50px;
+    background: darkgray;
+}
+
+.siyahi {
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+.contanier {
+    height: 90px;
+    display: flex;
+    width: 100%;
+}
+
+.navbar h1 {
+    font-size: 50px;
+}
+
+.siyahi ul li {
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding: 8px 12px;
+    text-transform: uppercase;
+}
+
+.siyahi ul {
+    display: flex;
+    gap: 10px;
+}
+
+.siyahi ul li:hover {
+    background: #336ea2;
+    border-radius: 4px;
+}
+
+main {
+    display: flex;
+    background: darkgrey;
+    padding: 30px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.CONTANIER {
+    display: flex;
+
+    gap: 20px;
+}
+
+#secRight {
+    width: 20vw;
+}
+
+.secBoxLeft {
+    background: orangered;
+    padding: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.1px;
+    font-weight: 800;
+    color: white;
+}
+
+.secBoxRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cateBox {
+    height: 55vh;
+}
+.secBoxRight {
+    height: 55vh;
+}
+#secLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70vw;
+}
+
+#secRight h3 {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#secRight ul li {
+    list-style-type: none;
+}
+#secRight ul {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    margin: 15px 0;
+}
+h5 {
+    text-align: center;
+    margin: 15px 0;
+}
+table {
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+.TableHidTr {
+    background-color: black;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 1351px) {
+    .cateBox {
+        height: 60vh;
+    }
+    .secBoxRight {
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 1233px) {
+    .cateBox {
+        height: 65vh;
+    }
+    .secBoxRight {
+        height: 65vh;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .cateBox {
+        height: fit-content;
+    }
+    .secBoxRight {
+        height: fit-content;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    #secLeft {
+        width: 100%;
+        text-align: justify;
+    }
+    #secRight {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .cateBox {
+        border: 2px solid rgb(133, 133, 133);
+        padding: 10px;
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .contanier {
+        height: 90px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .siyahi {
+        position: static;
+    }
+    #secRight {
+        justify-content: center;
+        gap: 20px;
+    }
+    .cateBox {
+        border: 2px solid rgb(133, 133, 133);
+        padding: 10px;
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .cateBox {
+        border: 2px solid rgb(133, 133, 133);
+        padding: 10px;
+        width: 300px;
+    }
+    .CONTANIER {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 624px) {
+    .cateBox {
+        border: 2px solid rgb(133, 133, 133);
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .siyahi ul {
+        flex-direction: column;
+    }
+    .contanier {
+        height: fit-content;
+    }
+    .siyahi {
+        width: 100%;
+        text-align: center;
+    }
+    #secRight {
+        text-align: center;
+    }
+}
